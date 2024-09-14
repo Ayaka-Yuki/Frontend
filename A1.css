@@ -1,0 +1,328 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray1: #c1c3c6;
+    --gray2: #919496;
+    --gray3: #616467;
+    --orange1: #FFDDC1;
+    --orange2: #F7E8D0;
+    --blue1: #CFE2F3; 
+    --blue2: #E2F0FF;
+    --green1: #ccfbde; 
+    --green2:#D4F7D4;
+    --green3:#bfddb0; 
+    --red1: #FDE2E4;
+    --red2:#F0F0F0; 
+    --purple: #F7E6F7;
+    --green4: #5bece5;
+}    
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+
+header {
+    height: 5.5rem;
+    background: var(--black);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 76.5rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    height: 100%;
+    cursor: pointer;
+}
+
+/* for my svg logo in header */
+.header-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header-logo svg {
+    fill:var(--white); 
+    height: 4rem; 
+    width: 4rem;
+}
+
+/* for my svg logo in header look_up */
+.nav-desktop {
+    display: flex;
+    align-items: center;
+}
+
+.nav-desktop ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-desktop ul li {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-right: 3rem;
+    font-weight: 700;
+}
+
+.nav-desktop ul li a {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+}
+
+.nav-desktop ul li a:hover {
+    background-color:var(--white);
+    color: var(--black);
+}
+
+section {
+    width: 100%;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 5.5rem;
+}
+
+.form-header {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    width:100%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width:100%;
+    max-width: 80%;
+    padding-right: 20%;
+}
+
+#update_form {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#add_form {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#delete_form {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-direction: center;
+    gap: 1rem;
+}
+
+.form-group label {
+    width: 30%;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: 100px;
+    text-align: right;
+    flex:1;
+}
+
+.form-group input {
+    width: 70%;
+    flex: 2;
+    padding: 1rem;
+    border: 0.05rem solid var(--black);
+    border-radius: 0.05rem;
+    font-size: 1.5rem;
+    min-width: 20rem;
+}
+
+table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    flex-grow: 1;
+}
+
+table th, table td {
+    border: 0.1rem solid var(--black);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+table tbody .food-dining { 
+    background-color:var(--orange1);
+}
+
+table tbody .housing {
+    background-color: var(--blue1)
+}
+
+table tbody .transportation { 
+    background-color: var(--green1); 
+}
+
+table tbody .communication { 
+    background-color: var(--red1);
+}
+
+table tbody .personal-care { 
+    background-color: var(--blue2); 
+}
+
+table tbody .health-wellness { 
+    background-color: var(--purple); 
+}
+
+table tbody .education {
+    background-color: var(--green2)
+}
+
+table tbody .entertainment { 
+    background-color: var(--green4) 
+}
+
+table tbody .debt-payments {
+    background-color: var(--orange2)
+}
+
+table tbody .pets {
+    background-color: var(--green3)
+}
+
+table tbody .others {
+    background-color: var(--red2)
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.action-buttons button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+ /* CSS to make the select smaller and hide its text */
+#category_filter {
+    width: 1rem; /* Adjust the width as needed */
+    overflow: hidden;
+    text-indent: -100rem; /* Hide the text */
+    background-color: cornsilk;
+}
+
+#category_filter option {
+    text-indent: 0; /* Ensure options are visible in the dropdown */
+}
+
+.modal{
+    display: none; 
+    position:fixed;
+    z-index: 999; 
+    left: 25%;
+    top: 25%;
+    width: 50%; 
+    height: 50%; 
+    overflow: auto; 
+    background-color: var(--white);
+}
+
+.close {
+    color: var(--gray3);
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#popup_form{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15rem;
+}
+
+#modal_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+}
